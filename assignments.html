@@ -15,53 +15,38 @@
     </head>
 
     <body>
-    <table border="1" cellpadding ="2px">
-        <caption> students info </caption>
-    <thead>
-        <tr>
-            <th>Group</th>
-            <th>Avatar </th>
-            <th>Name </th>
-            <th>Email </th>
-            <th>Character </th>
-            
-            
+     <form action="" method="POST">
+         <label> Username </label>
+         <br>
+         <input type="text" required placeholder="type your name" name="username">
+         <hr>
+         <label> Password </label>
+         <br>
+         <input type="password" placeholder="type your password " name="pass">
+         <br>
+         <hr>
 
-        </tr>
-        <tr >
-            <td> ninja</td>
-            <td>  <img src="https://via.placeholder.com/50x50/F00" alt=""></td>
-            <td>zyad ahmed </td>
-            <td> zyad@tt.com</td>
-            <td> &copy;</td>
+         <label> Email </label>
+         <br>
+         <input type="email" required placeholder="type your email" name="mail">
+         <br>
+         <hr>
 
-        </tr>
-        <tr>
-            <td> ninja </td>
-            <td>  <img src="https://via.placeholder.com/50x50/3A3B3C" alt=""></td>
-            <td>m  ahmed </td>
-            <td> mm@tt.com</td>
-            <td> &#8482</td>    
-
-        </tr>
-        <tr>
-            <td> monsters</td>
-            <td>  <img src="https://via.placeholder.com/50x50/7C9B9C" alt=""></td>
-            <td> body  </td>
-            <td> mkk@tt.com</td>
-            <td> &#8482</td>    
-
-        </tr>
-        <tr>
-            <td colspan="4" > total number </td>
-            <td > 3</td>
-        </tr>
-        <p>test </p>
+         <label> mobile </label>
+         <br>
+         <input type="text" placeholder="type your mobile number " name="mobilenumber">
         
-        
-    </thead>
-    </table>
+         <hr>
 
+         <label> subject  </label>
+         <br>
+         <input type="text" placeholder="type your subject" name="subject">
+         <hr>
+         <input type="reset">
+         <input type="submit" value="send data">
+         <input hidden type="button">
+         
+     </form>
 
 
     </body>
