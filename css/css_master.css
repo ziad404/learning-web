@@ -1,108 +1,64 @@
-:root{
-    --maincolor:#ddd;
-}
-.page{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    background-color: #eee;
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 350px;
+    display: grid;
     margin: 20px auto;
-    padding: 10px;
-    width: 720px;
-    height: 500px;
-    font-size: 12px;
-}
-
-
-.header{
-    display: flex;
-    background-color: #eee;
-    justify-content: space-between;
-    width: 100%;   
-   
-     
-    
-    
-
-}
-.logo{
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-.links, .logo{
-    list-style-type: none;
-    background-color: var(--maincolor);
-    display: flex;
-    border-radius: 5px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    
-   
-}
-.header .links {
-    list-style: none;
-    width: 90%;
     justify-content: flex-end;
-    margin: 0;
-}
-li {
-    padding: 5px;
-    margin-right: 10px;
-}
-.header .logo {
-    width: 8%;
-}  
-.main-area {
-    width: 100%;
-    font-size: 12px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.content, .sidebar {
-    display: flex;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    gap: 10px;
+  }
+  .grid div{
     background-color: var(--maincolor);
-    border-radius: 5px;
-    height: 400px;
     padding: 10px;
-}
-
-.content {
-    width: 50%;
-}
-
-.sidebar {
-    width: 38%;
-}
-
-/* end sidebar */
-
-.footer {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--maincolor);
-    margin-top: 10px;
-}
-
-.copyright, .design {
-    display: flex;
-    background-color: var(--maincolor);
-    display: flex;
-    border-radius: 5px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-}
-.design{
-    padding-right: 10px;
-}
-.copyright{
-    padding-left: 10px;
-} 
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+  :root{
+    --maincolor:rgb(192, 73, 93);
+  }
+  .one{
+   grid-column:1/10 ;
+   grid-row: 6/7;
+  }
+  .two{
+   
+    grid-column: 1/6;
+    grid-row: 2/3;
+   
+  }
+  .three{
+   
+    grid-column: 6/10;
+    grid-row: 2/3;
+    
+  }
+  
+  .four{
+    
+    grid-column: 1/4;
+    grid-row: 3/4;
+  
+   
+  }
+  .five{
+    grid-row: 3/6;
+    grid-column: 4/10;
+    padding-top: 25px;
+  }
+  .six{
+    grid-row: 4/5;
+    grid-column: 1/4;
+  }
+  .seven{
+    grid-column: 1/4;
+    grid-row: 5/6;
+  }
+  .eight{
+    grid-column: 1/10;
+    grid-row: 1/2;
+   }
